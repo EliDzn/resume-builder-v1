@@ -1,0 +1,482 @@
+/* Fonts used (froom Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
+    --bg-color1: #f7f7f7;
+    --txt-color1: #121212;
+}
+
+[data-theme="dark"] {
+    --bg-color1: #121212;
+    --txt-color1: #f7f7f7;
+}
+
+.app-container {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color1);
+    color: var(--txt-color1);
+}
+
+.page-container {
+    min-height: 100dvh;
+    max-width: 100dvw;
+    background-color: var(--bg-color1);
+    color: var(--txt-color1);
+}
+
+.fcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcc-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 2.074rem;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+legend {
+    font-size: 2.074rem;
+    font-weight: bold;
+}
+
+hr {
+    background-color: var(--txt-color1);
+    width: 90%;
+}
+
+header {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.btn-1 {
+    background-color: transparent;
+    color: var(--txt-color1);
+    border: 2px solid var(--txt-color1);
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+.nav-container {
+    position: absolute;
+}
+
+.nav-btn-container {
+    right: 1%;
+    top: 2%;
+    position: fixed;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-btn-container > i {
+    box-sizing: content-box;
+    font-size: 2rem;
+}
+
+.navdropdown-container {
+    border: 2px solid var(--txt-color1);
+    border-radius: 4px;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+nav {
+    position: fixed;
+    right: 1%;
+    top: 4.6em;
+}
+
+.navdropdown-container > ul > li, .navdropdown-container > ul > li > select {
+    background-color: var(--bg-color1);
+    color: var(--txt-color1);
+    font-family: inherit;
+}
+
+.navdropdown-container > ul > li, .navdropdown-container > ul > li > select option {
+    padding: 0.2rem;
+}
+
+.navdropdown-container > ul {
+    padding: 0;
+}
+
+.navdropdown-container > ul > li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+.navdropdown-container > ul > li:hover {
+    background-color: var(--txt-color1);
+    color: var(--bg-color1);
+}
+
+.navdropdown-container > ul > li:first-of-type {
+    padding: 0.4rem;
+}
+
+.navdropdown-container > ul > li:first-of-type > button > p {
+    margin-left: 2px;
+}
+
+.navdropdown-container > ul > li:first-of-type > button > i {
+    margin-right: 1px;
+}
+
+.navdropdown-container > ul > li:first-of-type > button > .fa-moon {
+    margin-right: 3px;
+}
+
+.navdropdown-container > ul > li:first-of-type > button  {
+    padding: 0.1rem 0.1rem 0.1rem 0;
+}
+
+.navdropdown-container > ul > li > button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.navdropdown-container > ul > li > select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-right: 0.6rem;
+    font-size: inherit;
+}
+
+.navdropdown-container > ul > li > select:hover {
+    background-color: var(--txt-color1);
+    color: var(--bg-color1);
+}
+.navdropdown-container > ul > li > select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.fontstyle-icon {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 4px;
+    padding: 0.25rem;
+}
+
+/* ====================================== */
+
+/* Form */
+
+.form-container {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+form {
+    width: 100%;
+}
+
+form > fieldset > legend {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+form > fieldset {
+    border: none;
+    outline: none;
+    width: 60dvw;
+}
+
+form > fieldset > label, .fulldate-subcontainer > label, .input-container > label {
+    font-size: 1.44rem;
+}
+
+.add-info-container {
+    margin: 2% auto;
+}
+
+form > hr {
+    width: 70%;
+    margin: 1rem;
+    padding: 0.5px;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+form > hr:last-of-type {
+    margin-bottom: 3rem;
+}
+
+
+.input-container {
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.input-container > input {
+    font-family: inherit;
+    border: 2px solid grey;
+    border-radius: inherit;
+    padding: 0.8rem;
+    outline: none;
+    width: 100%;
+    margin: 2px;
+}
+
+.input-container > input:focus {
+    border: 2px solid var(--txt-color1);
+}
+
+.fulldate-container {
+    gap: 2%;
+}
+
+.fulldate-subcontainer {
+    width: 100%;
+}
+
+.btn-row {
+    gap: 2%;
+    width: 100%;
+}
+
+.btn-row > button {
+    padding: auto 5rem;
+}
+
+/* ====================================== */
+
+.return-top-btn {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--color1);
+    width: 20%;
+    text-align: center;
+    border: transparent 1px solid;
+    border-radius: 4px;
+}
+
+.return-top-btn:hover {
+    border: 1px solid var(--txt-color1);
+    transition: 0.5 ease linear;
+}
+
+/* ====================================== */
+
+/* For Display Component */
+
+.display-label {
+    margin: 6rem auto;
+}
+
+.user-display-name {
+    text-align: center;
+}
+
+.display-container {
+    width: 80%;
+    padding: 2rem;
+    min-height: 20dvh;
+}
+
+.display-container > hr {
+    width: 100%;
+    color: var(--txt-color1);
+    border: 1px solid var(--txt-color1);
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.display-heading {
+    margin: 1.2rem auto;
+}
+
+.header-entry {
+    justify-content: flex-end;
+}
+
+.data-entry {
+    width: 100%;
+    position: relative;
+}
+
+.data-entry-ul {
+    padding-left: 1rem;
+}
+
+.data-entry-list {
+    width: 100%;
+    position: relative;
+    margin: 0.8rem auto;
+}
+
+.edit-btn-row {
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.edit-btn  {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.edit-btn > i {
+    color: var(--txt-color1);
+}
+
+.edit-btn:hover {
+    border-radius: 4px;
+    border: 2px solid var(--txt-color1)
+}
+
+.edit-btn:nth-of-type(2) {
+    margin-left: 4px;
+}
+
+.date {
+    margin: 0.4rem auto;
+}
+
+.desc {
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.date, .display-header-desc {
+    color: #686666;
+}
+
+/* ====================================== */
+
+
+/* Edit Modal */
+
+.modal-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(50,50,50,0.8);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.modaltxt-container {
+    position: relative;
+    z-index: 1001;
+    width: 60%;
+    background-color: var(--bg-color1);
+    border-radius: 1rem;
+}
+
+.modal-btn-row {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.editmodal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+}
+
+.editmodal-container > fieldset {
+    border: none;
+    width: 60%;
+}
+
+.editmodal-container > fieldset > legend {
+    text-align: center;
+}
+
+/* ====================================== */
+
+
